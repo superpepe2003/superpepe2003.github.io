@@ -1,0 +1,24 @@
+{
+    "name":"ProgramadorWeb",
+    "short_name":"#ProgramadorWeb",
+    "description":"Bienvenidos a programador, serie de videos, donde te dare consejos para llevar una vida saludable y evitar el sedentarismo",
+    "background_color":"#2b2b2b",
+    "theme_color":"#f0db4f",
+    "orientation":"portrait",
+    "display":"standalone",
+    "start_url":"./?utm_source=web_app_manifest",
+    "scope":"./",
+    "lang":"es-AR",
+    "icons":[
+        {
+            "src": "./img/icono144x144.png",
+            "sizes": "144x144",
+            "type":"image/png"
+        },
+        {
+            "src": "./img/icono255x255.png",
+            "sizes": "255x255",
+            "type":"image/png"
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+body{
+    height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+
+    /* overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory; */
+}
+
+.header{
+    position: fixed;
+    top:0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(200,0,0,.9);
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    width:100%;
+    justify-content: center;
+}
+
+.header ul li{
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.header ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+}
+
+@media (min-width: 400px) {
+    .header ul li a {
+        font-size: 18px;
+    }
+  }
+
+.header ul li a:hover{
+    color:skyblue;
+}
+
+.section{
+    padding-top:75px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    scroll-snap-align: center;
+}
+
+.section p{
+    margin: 15px;
+    padding:5px;
+    background-color: rgba(204, 89, 12, 0.8);
+    border-radius: 10px; 
+    color: rgba(255,255,255,0.7);
+}
+
+.section img{
+    height: 250px;
+    width: 250px;
+    border: 2px solid white;
+    border-radius:  50%;
+    align-self: center;
+}
+
+.section h1{
+    position: absolute;
+    left: -200px;
+}
+
+.section#inicio{
+    background: url('./img/perro.jpg') no-repeat center center/cover;
+}
+
+/* .section#bienvenido{
+    background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+} */
+
+/* .section#chau{
+    background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+} */
